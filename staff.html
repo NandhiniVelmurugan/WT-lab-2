@@ -1,0 +1,110 @@
+<!DOCTYPE.html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<body>
+<style>
+    body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color:black;
+}
+
+.bgimg-1 {
+  position: relative;
+  opacity:0.75;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("data:image/jpeg;base64,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");
+  height: 50%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color:black;
+}
+
+.caption span.border {
+  background-color:azure;
+  color:black;
+  padding: 20px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+.bg {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWRnsPQ16QhvXHiNH6djVnMXY0nVIDiKnlz30sS62s9ZiRiTalUtS0QKu78Xxf1OQ5I7E&usqp=CAU"); 
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+</style>
+</head>
+<body>
+    <div class="bgimg-1">
+        <div class="caption">
+          <span class="border">OUR TEACHERS</span>
+        </div>
+      </div>
+    <div class="bg">;
+<div class="container-fluid" style="padding:15px;">
+<div class="row">
+<div class="col-md-3" align="center">
+<img class="bd-placeholder-img rounded-circle" src="D:\WT\sir1.jpeg" width="200" height="200">
+<h5>MOHAN LAKHAMRAJU</h5>
+<p><a class="btn btn-secondary" href="D:\bootrap upload\mohan.html" role="button">View bio</a></p>
+</div>
+<div class="col-md-3" align="center">
+<img class="bd-placeholder-img rounded-circle" src="D:\WT\sir2.jpeg" width="200" height="200">
+<h5>HARI KRISHNAN NAIR</h5>
+<p><a class="btn btn-secondary" href="file:///D:/bootrap%20upload/hari.html" role="button">View bio</a></p>
+</div>
+<div class="col-md-3" align="center">
+<img class="bd-placeholder-img rounded-circle" src="D:\WT\sir3.jpeg" width="200" height="200">
+<h5>DEEPAK GUPTA</h5>
+<p><a class="btn btn-secondary" href="D:\bootrap upload\gupta.html" role="button">View bio</a></p>
+</div>
+<div class="col-md-3" align="center">
+<img class="bd-placeholder-img rounded-circle" src="D:\WT\sir4.jpeg" width="200" height="200">
+<h5>ARJUN NAIR</h5>
+<p><a class="btn btn-secondary" href="D:\bootrap upload\arjun.html" role="button">VIEW BIO</a></p><br>
+</div>
+<div class="col-md-3" align="center">
+<img class="bd-placeholder-img rounded-circle" src="D:\WT\sir5.jpeg" width="200" height="200">
+<h5>RITESH MALHOTRA</h5>
+<p><a class="btn btn-secondary" href="D:\bootrap upload\ritesh.html" role="button">VIEW BIO</a></p>
+</div>
+<div class="col-md-3" align="center">
+    <img class="bd-placeholder-img rounded-circle" src="D:\WT\sir6.jpeg" width="200" height="200">
+    <h5>HARISH SUBRAMANIAN</h5>
+    <p><a class="btn btn-secondary" href="D:\bootrap upload\harish.html" role="button">VIEW BIO</a></p>
+    </div>
+    <div class="col-md-3" align="center">
+        <img class="bd-placeholder-img rounded-circle" src="D:\WT\sir7.jpeg" width="200" height="200">
+        <h5>VINEET RADHAKRISHNAN</h5>
+        <p><a class="btn btn-secondary" href="D:\bootrap upload\vineet.html" role="button">VIEW BIO</a></p>
+        </div>
+        <div class="col-md-3" align="center">
+            <img class="bd-placeholder-img rounded-circle" src="D:\WT\sir8.jpeg" width="200" height="200">
+            <h5>APARNA MAHESH</h5>
+            <p><a class="btn btn-secondary" href="D:\bootrap upload\aparna.html" role="button">VIEW BIO</a></p>
+            </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
